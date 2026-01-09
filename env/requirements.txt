@@ -1,0 +1,18 @@
+# Core scientific stack
+numpy
+scipy
+pandas
+matplotlib
+scipy
+
+# Astronomy (optional but lightweight)
+astropy
+aplpy==2.2.0
+
+# Jupyter ecosystem
+notebook
+ipykernel
+
+# Configuration / utilities
+pyyaml
+tqdm
