@@ -108,10 +108,10 @@ len2      = out["len2"] # 2D NN length
 
 If you use this code in your research, please cite:
 
-Barnes, A. T., et al. (2026). 
+Barnes, A. T., et al. (2026).
 
-This project was produced using
-[cookiecutter-research-project](https://github.com/jdhenshaw/cookiecutter-research-project).
+This project was produced using the
+[cookiecutter-research-project](https://github.com/jdhenshaw/cookiecutter-research-project) template.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE)
 file for details.
