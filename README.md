@@ -17,7 +17,7 @@ Returns fitted parameters in form:
 $$C(N, SDR) = C_\infty [1 - \exp(-SDR / S_0)] (N / N_0)^\beta.$$
 
 Fitting this form to the grid of ensemble-averaged measurements from
-1000 fractal realisations with $D=1.7$-$2.5$, $n_{\mathrm{div}}=2$-$4$ yields:
+1000 fractal realisations with $D=1.7-2.5$, $n_{\mathrm{div}}=2-4$ yields:
 
 $$\mathcal{C}_\infty = 1.94 \pm 0.01,$$
 $$S_0      = 21.8 \pm 0.3,$$
