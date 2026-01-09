@@ -20,7 +20,6 @@ import json
 
 import numpy as np
 
-
 __all__ = [
     "summarize_lengths",
     "print_length_stats",
@@ -444,7 +443,7 @@ def print_nn_report(
 ) -> None:
     """Print a user-friendly report comparing 3D and projected-2D NN graphs."""
     print("\n" + "=" * 72)
-    print("NN comparison: 3D vs projected 2D")
+    print("Comparison: 3D vs projected 2D")
     print("=" * 72)
 
     print(f"Sampling: N={N_POINTS}, R={RADIUS:g}")
@@ -462,7 +461,7 @@ def print_nn_report(
     print(f"Overlap (3D→2D recovery): {comp['overlap_fraction_3d']:.3f}")
     print(f"Jaccard similarity:        {comp['jaccard_similarity']:.3f}")
 
-    print("\nTotal NN length")
+    print("\nTotal length")
     print("-" * 72)
     print(f"3D: {L3:.5f}")
     print(f"2D: {L2:.5f}")
@@ -473,8 +472,8 @@ def print_nn_report(
     print("-" * 72)
     print(f"<l_2D>/<l_3D> = {ratio:.3f}  (geometric expectation ≈ {geom_factor:.3f})")
 
-    print_length_stats("3D NN", stats3)
-    print_length_stats("2D NN", stats2)
+    print_length_stats("3D", stats3)
+    print_length_stats("2D", stats2)
 
     if comp["n_only_in_3d"] or comp["n_only_in_2d"]:
         print("\nExample differing edges (up to 5 each)")
