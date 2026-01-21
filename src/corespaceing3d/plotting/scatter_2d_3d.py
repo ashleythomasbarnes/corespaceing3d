@@ -13,11 +13,10 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 
-import numpy as np
 import matplotlib.lines as mlines
+import numpy as np
 
 from .rcParams import *  # noqa: F403  (project-wide Matplotlib style settings)
-
 
 __all__ = [
     "plot_3d",
@@ -110,7 +109,7 @@ def plot_2d(
     ax.set_aspect("equal", adjustable="box")
     ax.set_xlim(-1, 1)
     ax.set_ylim(-1, 1)
-    ax.grid()
+    # ax.grid()
 
     return ax
 
@@ -155,10 +154,9 @@ def plot_overlay_2d(
         ax.set_title(title)
 
     # legend
-    h_only2  = mlines.Line2D([], [], color='tab:orange', lw=2, label='2D-only')
-    h_only3  = mlines.Line2D([], [], color='tab:blue', lw=1.5, ls='--', label='3D-only (proj)')
-    leg = ax.legend(handles=[h_only2, h_only3],
-                    prop={'size': 8}, frameon=True, facecolor='white')
-    leg.get_frame().set_edgecolor('black')
+    h_only2 = mlines.Line2D([], [], color="tab:orange", lw=2, label="2D-only")
+    h_only3 = mlines.Line2D([], [], color="tab:blue", lw=1.5, ls="--", label="3D-only (proj)")
+    leg = ax.legend(handles=[h_only2, h_only3], prop={"size": 8}, frameon=True, facecolor="white")
+    leg.get_frame().set_edgecolor("black")
     leg.get_frame().set_linewidth(0.8)
-    ax.grid()
+    # ax.grid()
